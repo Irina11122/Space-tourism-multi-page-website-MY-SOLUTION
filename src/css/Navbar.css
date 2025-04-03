@@ -1,0 +1,309 @@
+<<<<<<< HEAD
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 40px;
+  z-index: 1;
+
+  & .logo-img {
+    margin-left: 80px;
+  }
+
+  & .hamburger-img {
+    display: none;
+    z-index: 2;
+  }
+}
+.close-icon {
+  display: none;
+}
+.navbar-nav {
+  background: #ffffff05;
+  backdrop-filter: blur(50px);
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 64%;
+    right: 94%;
+    height: 1px;
+    background-color: #979797a7;
+  }
+}
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.navbar-nav.active {
+  display: flex; /* Кога менито е активно, покажи го */
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff05;
+  backdrop-filter: blur(50px);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1; /* да биде над другите елементи */
+}
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    & .logo-img {
+      margin-left: 80px;
+    }
+
+    & .hamburger-img {
+      display: none;
+    }
+  }
+  .navbar-nav {
+    background: #ffffff19;
+    backdrop-filter: blur(80px);
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      right: 0;
+      height: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    padding: 0;
+  }
+
+  header {
+    margin: 10px 0;
+    padding: 0;
+    width: 93%;
+    position: relative;
+    & .logo-img {
+      margin-left: 20px;
+    }
+
+    & .hamburger-img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-nav::before {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+  .close-icon {
+    display: block;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .navbar-nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff05;
+    backdrop-filter: blur(50px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+=======
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 40px;
+  z-index: 1;
+
+  & .logo-img {
+    margin-left: 80px;
+  }
+
+  & .hamburger-img {
+    display: none;
+    z-index: 2;
+  }
+}
+.close-icon {
+  display: none;
+}
+.navbar-nav {
+  background: #ffffff05;
+  backdrop-filter: blur(50px);
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 64%;
+    right: 94%;
+    height: 1px;
+    background-color: #979797a7;
+  }
+}
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.navbar-nav.active {
+  display: flex; /* Кога менито е активно, покажи го */
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff05;
+  backdrop-filter: blur(50px);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1; /* да биде над другите елементи */
+}
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    & .logo-img {
+      margin-left: 80px;
+    }
+
+    & .hamburger-img {
+      display: none;
+    }
+  }
+  .navbar-nav {
+    background: #ffffff19;
+    backdrop-filter: blur(80px);
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      right: 0;
+      height: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    padding: 0;
+  }
+
+  header {
+    margin: 10px 0;
+    padding: 0;
+    width: 93%;
+    position: relative;
+    & .logo-img {
+      margin-left: 20px;
+    }
+
+    & .hamburger-img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-nav::before {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+  .close-icon {
+    display: block;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .navbar-nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff05;
+    backdrop-filter: blur(50px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+>>>>>>> 57ddcef (Initial commit)
